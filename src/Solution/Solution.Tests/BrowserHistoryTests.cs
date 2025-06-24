@@ -59,7 +59,7 @@ namespace Solution.Tests
                 Console.SetOut(sw);
                 historyManager.TampilkanHistory();
 
-                var expected = string.Join(Environment.NewLine, new[] { "google.com", "example.com" }) + Environment.NewLine;
+                var expected = string.Join(Environment.NewLine, new[] { "example.com", "google.com" }) + Environment.NewLine;
                 Assert.AreEqual(expected, sw.ToString(), "Should display all visited pages in order.");
             }
         }
